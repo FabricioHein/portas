@@ -16,6 +16,8 @@ const Porta = (props) => {
 <div className={styles.estrutura}>
     <div className={styles.porta}>
     <div className={styles.numero}>{props.numero || numero}</div>
+    <div className={styles.macaneta}></div>
+
 
 
     </div>
