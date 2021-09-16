@@ -31,6 +31,7 @@ const Porta = (props) => {
             /> */}
 
         </div>
+        <div className={styles.chao}></div>
 
 </div>
         )

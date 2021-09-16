@@ -3,10 +3,12 @@ import Presente from "../components/Presente";
 import Porta from '../components/Porta'
 
 function Home() {
-  return <div>
+  return <div style={{display: 'flex'}}>
     {/* <Title/>
     <Presente/> */}
     <Porta/>
+    <Porta/>
+
   </div>;
 }
 
