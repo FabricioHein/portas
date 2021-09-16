@@ -7,20 +7,33 @@ const Porta = (props) => {
     const [numero, setNumero] = useState(3)
 
     function Evento() {
-        setNumero(numero + 200)
+        setNumero("Mudou")
+        console.log(numero)
     }
 
     return (
+<div className={styles.area}>
+<div className={styles.estrutura}>
+    <div className={styles.porta}>
+    <div className={styles.numero}>{props.numero || numero}</div>
 
-        <div className={styles.porta}>
-            <div className={styles.numero}>{props.numero || numero}</div>
-            <Button
+
+    </div>
+            {/* <Button
             action={Evento}
             name={'Mude o valor'}           
             
             />
+            <input
+            value={numero}
+            onChange={e => setNumero(e.target.value)}
+            
+            /> */}
 
-        </div>)
+        </div>
+
+</div>
+        )
 }
 
 
