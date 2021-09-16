@@ -1,7 +1,18 @@
-const Title = (props)=>{
+import { useState, useEffect} from "react";
+
+const Title = ()=>{
+  const [title, setTitle] = useState('Projeto Sorteio das Portas')
+  
+ 
+  
   return(
-    <h1>{props.title || 'Projeto Sorteio das Portas'}</h1>
-  )
+<div>
+<h1>{title}</h1>
+<button
+onClick={()=>{setTitle('O jogo Começou, siga as regras')}}
+
+/>
+</div>  )
 }
 
 export default Title;
