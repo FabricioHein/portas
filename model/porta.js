@@ -28,8 +28,19 @@ export default class Porta {
 
         return this.#aberta
     }
+    descelecionar(){
+        const selecionada = false
+        return new Porta(this.numero, this.temPresente, selecionada, this.aberta)
+
+
+    }
     alterarSelecao(){
         const selecionada = !this.selecionada
+        return new Porta(this.numero, this.temPresente, selecionada, this.aberta)
+    }
+    abrir(){
+        const aberta = true
+        return new Porta(this.numero, this.temPresente, selecionada, aberta)
     }
 
 }
