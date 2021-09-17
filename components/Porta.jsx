@@ -9,17 +9,17 @@ const Porta = (props) => {
     function Evento() {
         setNumero("Mudou")
         console.log(numero)
+
     }
+
+    const selecionada = props.selecionada? styles.selecionada  : ''
 
     return (
 <div className={styles.area}>
-<div className={styles.estrutura}>
+<div className={`${styles.estrutura} ${selecionada}`}>
     <div className={styles.porta}>
     <div className={styles.numero}>{props.numero || numero}</div>
     <div className={styles.macaneta}></div>
-
-
-
     </div>
             {/* <Button
             action={Evento}

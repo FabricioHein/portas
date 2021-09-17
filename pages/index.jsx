@@ -4,10 +4,10 @@ import Porta from '../components/Porta'
 
 function Home() {
   return <div style={{display: 'flex'}}>
-    <Title/>
-    <Presente/>
+    {/* <Title/>
+    <Presente/> */}
+    <Porta selecionada />
     <Porta/>
-    {/* <Porta/> */}
 
   </div>;
 }
